@@ -3,53 +3,193 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Video Background</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html, body {
-      height: 100%;
-      font-family: sans-serif;
-      overflow: hidden;
-    }
-    .video-background {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-    .content {
-      position: relative;
-      z-index: 1;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      background: rgba(0, 0, 0, 0.4); /* optional overlay */
-      text-align: center;
-    }
-    h1 {
-      font-size: 3em;
-    }
-  </style>
+  <title>Soutas Import Agencies</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Local or hosted video -->
+
+  <!-- Video Background -->
   <video class="video-background" autoplay muted loop playsinline>
     <source src="vb1.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
   </video>
 
-  <div class="content">
-    <h1>Welcome to My Site</h1>
-  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="assets/logo.png" alt="Soutas Logo" height="40">
+          <span class="fw-bold">SOUTAS IMPORTS AGENCIES</span>
+        </a>      
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#suppliers">Suppliers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- SPA Sections -->
+  <section id="home" class="min-vh-100 py-5 d-flex align-items-center justify-content-center text-white">
+    <div class="text-center">
+      <h1 class="display-4">SOUTAS IMPORTS AGENCIES</h1>
+      <p class="lead">Batteries & Related Products</p>
+    </div>
+  </section>
+
+
+  <section id="suppliers" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-5 text-center">Our Suppliers</h2>
+      <div class="row text-center">
+        
+        <!-- Supplier 1 -->
+        <div class="col-md-4 mb-4">
+          <img src="assets/dn.png" alt="Supplier 1" class="img-fluid rounded shadow-sm mb-3" style="height: 200px; object-fit: contain;">
+          <h5>Supplier Name 1</h5>
+          <p class="text-muted">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+
+        <!-- Supplier 2 -->
+        <div class="col-md-4 mb-4">
+          <img src="assets/dn.png" alt="Supplier 2" class="img-fluid rounded shadow-sm mb-3" style="height: 200px; object-fit: contain;">
+          <h5>Supplier Name 2</h5>
+          <p class="text-muted">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+
+        <!-- Supplier 3 -->
+        <div class="col-md-4 mb-4">
+          <img src="assets/dn.png" alt="Supplier 3" class="img-fluid rounded shadow-sm mb-3" style="height: 200px; object-fit: contain;">
+          <h5>Supplier Name 3</h5>
+          <p class="text-muted">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="products" class="py-5">
+    <div class="container">
+      <h2 class="mb-5 text-center">Our Products</h2>
+      <div class="row g-4">
+
+        <!-- SLI Batteries -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/sli.jpg" class="card-img-top" alt="SLI Batteries">
+            <div class="card-body text-center">
+              <h5 class="card-title">SLI Batteries</h5>
+              <p class="card-text text-muted">Starting, Lighting, Ignition batteries for everyday vehicles.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Truck Batteries -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/truck.jpg" class="card-img-top" alt="Truck Batteries">
+            <div class="card-body text-center">
+              <h5 class="card-title">Truck Batteries</h5>
+              <p class="card-text text-muted">Heavy-duty batteries designed for commercial vehicles.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marine Batteries -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/marine.jpg" class="card-img-top" alt="Marine Batteries">
+            <div class="card-body text-center">
+              <h5 class="card-title">Marine Batteries</h5>
+              <p class="card-text text-muted">Built to handle deep discharges and harsh marine conditions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Moto Batteries -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/moto.jpg" class="card-img-top" alt="Moto Batteries">
+            <div class="card-body text-center">
+              <h5 class="card-title">Moto Batteries</h5>
+              <p class="card-text text-muted">Compact, reliable power sources for motorcycles and scooters.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deep Cycle Batteries -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/deep-cycle.jpg" class="card-img-top" alt="Deep Cycle Batteries">
+            <div class="card-body text-center">
+              <h5 class="card-title">Deep Cycle Batteries</h5>
+              <p class="card-text text-muted">Designed for prolonged energy output over long periods.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leisure Batteries -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/leisure.jpg" class="card-img-top" alt="Leisure Batteries">
+            <div class="card-body text-center">
+              <h5 class="card-title">Leisure Batteries</h5>
+              <p class="card-text text-muted">Perfect for RVs, caravans, and other leisure applications.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Contact Us</h2>
+      <p>Contact form will go here...</p>
+    </div>
+  </section>
+
+
+  <!-- Bootstrap JS (for navbar toggle) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+
 </body>
 </html>
-
-
-
