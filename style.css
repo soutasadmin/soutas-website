@@ -16,11 +16,20 @@ html {
 }
 
 section {
-  scroll-margin-top: 68px;
+  scroll-margin-top: 66px;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 h1 {
   font-size: 3em;
+}
+
+#profile {
+  background-color: #343a40; /* Bootstrap dark gray */
+  color: #f8f9fa; /* Light text */
 }
 
 #products {
