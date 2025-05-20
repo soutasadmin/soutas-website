@@ -8,3 +8,12 @@ window.addEventListener('scroll', () => {
 backToTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
+AOS.init({
+  duration: 800,
+  offset: 120,
+  once: true, // animate only once
+  easing: 'ease-in-out'
+});
+
