@@ -1,6 +1,15 @@
+:root {
+  --primary-color: #0d6efd;
+  --dark-bg: #343a40;
+  --light-text: #f8f9fa;
+  --transition-speed: 0.3s ease;
+  --overlay-dark: rgba(27, 24, 24, 0.9);
+}
+
 html, body {
   height: 100%;
-  font-family: sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--light-text);
 }
 
 html {
@@ -23,18 +32,86 @@ section {
   text-align: justify;
 }
 
+h1, h2, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
 h1 {
   font-size: 3em;
 }
 
 .custom-navbar {
-  background-color: rgba(33, 37, 41, 0.85); /* dark gray with 85% opacity */
-  backdrop-filter: blur(5px); /* optional: adds a blur for glassy effect */
+  background-color: rgba(33, 37, 41, 0.85);
+  backdrop-filter: blur(5px);
+  transition: box-shadow var(--transition-speed);
+}
+
+.custom-navbar:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand img {
+  transition: transform var(--transition-speed);
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  transition: color var(--transition-speed);
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width var(--transition-speed);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--primary-color) !important;
+  font-weight: 500;
+}
+
+.nav-link.active::after {
+  width: 100%;
 }
 
 #profile {
-  background-color: #343a40; /* Bootstrap dark gray */
-  color: #f8f9fa; /* Light text */
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+#profile .lead {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+#profile img {
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+#profile img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 #products {
@@ -62,12 +139,101 @@ h1 {
 }
 
 #products .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  background-color: rgba(52, 58, 64, 0.95);
+  border: none;
+  color: var(--light-text);
+}
+
+#products .text-muted {
+  color: var(--light-text) !important;
 }
 
 #products .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 25px rgba(13, 110, 253, 0.3);
+}
+
+#products .card-title {
+  color: var(--light-text);
+  font-weight: 600;
+}
+
+#products .card-text {
+  color: var(--light-text);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-weight: 600;
+  transition: all var(--transition-speed);
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(13, 110, 253, 0.4);
+}
+
+#backToTop {
+  transition: all var(--transition-speed);
+  background-color: var(--primary-color) !important;
+  border: none;
+}
+
+#backToTop:hover {
+  background-color: #0b5ed7 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(13, 110, 253, 0.4);
+}
+
+#contact {
+  color: #333;
+}
+
+#contact h2 {
+  color: #212529;
+}
+
+#contact h5 {
+  color: #212529;
+}
+
+#contact p {
+  color: #555;
+}
+
+#contact a {
+  color: var(--primary-color);
+}
+
+#contact a:hover {
+  color: #0b5ed7;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Better contrast for focus states */
+a:focus,
+button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: rgba(52, 58, 64, 0.95);
+  }
 }
 
 

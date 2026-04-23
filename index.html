@@ -13,6 +13,12 @@
   <!-- Author -->
   <meta name="author" content="Soutas Import Agencies">
 
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Soutas Import Agencies – Batteries & Lubricants Importer">
+  <meta property="og:description" content="Over 35 years of experience importing and distributing premium batteries and lubricants. Partners with DN, Monbat, Camel, and JUST Energy.">
+  <meta property="og:type" content="business.business">
+  <meta property="og:locale" content="en_US">
+
   <!-- Favicon -->
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
@@ -21,6 +27,9 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
@@ -32,11 +41,40 @@
   <!-- AOS (Animate On Scroll) CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Soutas Import Agencies",
+    "image": "https://soutas.gr/assets/logo.png",
+    "description": "Trusted importer and distributor of premium batteries and lubricants with over 35 years of experience.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Athinas 76",
+      "addressLocality": "Korydallos, Piraeus",
+      "postalCode": "18120",
+      "addressCountry": "GR"
+    },
+    "telephone": "+30 210 4974 451",
+    "email": "info@soutas.gr",
+    "url": "https://soutas.gr",
+    "sameAs": [
+      "https://www.facebook.com/soutas.import",
+      "https://www.linkedin.com/company/soutas-import-agencies"
+    ],
+    "priceRange": "$$",
+    "areaServed": ["GR", "CY", "BG", "RS", "RO"],
+    "foundingDate": "1994"
+  }
+  </script>
+
 </head>
 <body>
 
   <!-- Video Background -->
-  <video class="video-background" autoplay muted loop playsinline poster="assets/video-poster.webp" preload="auto">
+  <video class="video-background" autoplay muted loop playsinline poster="assets/video-poster.webp" preload="auto" aria-label="Background video of battery products">
+    <source src="assets/vb1-optimized.webm" type="video/webm" />
     <source src="assets/vb1.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
   </video>
@@ -44,8 +82,8 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow custom-navbar">
     <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-          <img src="assets/logo.png" alt="Soutas Logo" height="40">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+          <img src="assets/logo.png" alt="Soutas Logo" height="40" loading="lazy">
         </a>      
         <button
         class="navbar-toggler"
@@ -85,8 +123,9 @@
   <!-- SPA Sections -->
   <section id="home" class="min-vh-100 py-5 d-flex align-items-center justify-content-center text-white">
     <div class="text-center">
-      <img src="assets/companyname.png" alt="Soutas Logo" class="img-fluid" style="max-height: 50px;">
+      <img src="assets/companyname.png" alt="Soutas Import Agencies" class="img-fluid" style="max-height: 50px;" loading="lazy">
       <h1 class="lead" style="color: #f8f9fac2; font-size: 16px;">BATTERIES & RELATED PRODUCTS</h1>
+      <a href="#contact" class="btn btn-primary btn-lg mt-4">Get in Touch</a>
     </div>
   </section>
 
@@ -106,14 +145,11 @@
         <!-- Text Column -->
         <div class="col-md-6 text-justify">
           <p class="lead">
-            Soutas Import Agencies is a trusted whosesale importer of premium batteries and energy solutions.
+            Soutas Import Agencies is a trusted wholesale importer of premium batteries and energy solutions.
             With a legacy of reliability and excellence, we partner with top-tier suppliers to deliver high-performance products across multiple industries.
           </p>
           <p>
-            Founded in 1994, Soutas Import Agencies has built a reputation for quality, innovation, and service excellence.
-            Our product lineup covers automotive, marine, leisure, and commercial battery needs.
-
-            Soutas Import Agencies is a company with a long-standing presence in the automotive battery and lubricant import sector, proudly serving the market for over 30 years. We specialize in the distribution of high-quality products, offering flexible solutions and personalized service to our clients.
+            Founded in 1994, Soutas Import Agencies has built a long-standing presence in the automotive battery and lubricant import sector, proudly serving the market for over 30 years. We have earned a reputation for quality, innovation, and service excellence in the distribution of high-quality products, offering flexible solutions and personalized service to our clients.
            </p>
           <p>
             With decades of experience in the industry, Soutas Import Agencies partners with leading global suppliers renowned for their reliability and product excellence in the automotive battery and lubricant markets. Among our esteemed battery partners are DN Automotive Corp. (South Korea), Monbat AD (Bulgaria), the Chinese powerhouse Camel Group, and Malaysian energy solutions manufacturer JUST Energy — all manufacturers of advanced batteries for cars, trucks, boats, and specialized applications.
@@ -125,7 +161,7 @@
 
         <!-- Image Column -->
         <div class="col-md-5 text-center">
-          <img src="assets/founder.webp" alt="Nikolaos Soutas, founder of Soutas Import Agencies" class="img-fluid rounded shadow">
+          <img src="assets/founder.webp" alt="Nikolaos Soutas, founder of Soutas Import Agencies" class="img-fluid rounded shadow" loading="lazy">
           <p class="small mt-3">Nikolaos Soutas, founder of Soutas Import Agencies.</p>
         </div>
 
@@ -141,7 +177,7 @@
         
         <!-- Supplier 1 -->
         <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
-          <img src="assets/dn.webp" alt="Supplier 1" class="img-fluid rounded shadow-sm mb-3" style="height: 200px; object-fit: contain;">
+          <img src="assets/dn.webp" alt="DN Automotive Corp." class="img-fluid rounded shadow-sm mb-3" style="height: 200px; object-fit: contain;" loading="lazy">
           <h5>DN Automotive Corp.</h5>
           <p class="text-muted text-justify">DN Automotive Corporation is a South Korean company specializing in automotive parts, batteries, and machine tools. Founded in 1971 as Dong-Ah Tire & Rubber, it has grown into a global player with a strong presence in the automotive industry.</p>
           <p class="text-muted">The company operates through several key divisions:</p>
@@ -149,14 +185,13 @@
             <li><strong>VMS (Vibration Management Systems):</strong> DN Automotive is a top supplier of anti-vibration components, including engine mounts and bushings, serving major automakers like GM and Stellantis.</li>
             <li><strong>BTS (Battery Technology Systems):</strong> Since entering the battery business in 1999, DN Automotive has developed and supplied various automotive batteries, including AGM batteries for start-stop vehicles.</li>
             <li><strong>TUBE Division:</strong> Specializes in automotive tubes, flaps, and rubber products, maintaining a strong global presence.</li>
-            <p class="text-muted text-justify">In 2022, DN Automotive expanded its capabilities by acquiring Doosan Machine Tools, now known as DN Solutions, enhancing its position in the machine tool industry. Headquartered in Yangsan-si, South Korea, DN Automotive continues to innovate and grow in the global automotive and machinery sectors.</p>
-
           </ul>
+          <p class="text-muted text-justify">In 2022, DN Automotive expanded its capabilities by acquiring Doosan Machine Tools, now known as DN Solutions, enhancing its position in the machine tool industry. Headquartered in Yangsan-si, South Korea, DN Automotive continues to innovate and grow in the global automotive and machinery sectors.</p>
         </div>
 
         <!-- Supplier 2 -->
         <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
-          <img src="assets/monbat.webp" alt="Supplier 2" class="img-fluid rounded shadow-sm mb-3" style="height: 200px; object-fit: contain;">
+          <img src="assets/monbat.webp" alt="MONBAT AD" class="img-fluid rounded shadow-sm mb-3" style="height: 200px; object-fit: contain;" loading="lazy">
           <h5>MONBAT AD</h5>
           <p class="text-muted text-justify">Monbat AD is a leading Bulgarian battery manufacturer, founded in 1959 and headquartered in Sofia. The company specializes in producing lead-acid and lithium-ion batteries for various applications, including automotive, industrial, marine, and military uses. Monbat operates production and recycling facilities across Bulgaria, Romania, Serbia, and Italy, with a recycling capacity of 158,000 tonnes of used lead-acid batteries per year.</p>
           <p class="text-muted text-justify">In 2017, Monbat expanded into lithium-ion technology by acquiring German companies Gaia Akkumulatorenwerke and EAS Germany, now operating under EAS Batteries GmbH . The company is listed on the Bulgarian Stock Exchange under the ticker MONB and employs over 1,300 people worldwide.</p>
@@ -164,7 +199,7 @@
 
         <!-- Supplier 3 -->
         <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
-          <img src="assets/camel.webp" alt="Supplier 3" class="img-fluid rounded shadow-sm mb-3" style="height: 200px; object-fit: contain;">
+          <img src="assets/camel.webp" alt="Camel Group Co., Ltd." class="img-fluid rounded shadow-sm mb-3" style="height: 200px; object-fit: contain;" loading="lazy">
           <h5>Camel Group Co., Ltd.</h5>
           <p class="text-muted text-justify">Camel Group Co., Ltd., founded in 1980, is Asia’s largest car battery manufacturer, specializing in lead-acid and lithium-ion batteries. Headquartered in Xiangyang, China, the company operates eight production bases and four R&D centers, with over 7,300 employees.</p>
           <p class="text-muted text-justify">Camel’s product lineup includes automotive starter batteries, start-stop batteries, heavy-duty truck batteries, marine batteries, and lithium-ion solutions for electric vehicles and energy storage systems. The company also emphasizes sustainability through battery recycling and green energy initiatives.</p>
@@ -173,7 +208,7 @@
 
         <!-- Supplier 4 -->
         <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://img.website.xin/contents/sitefiles3608/18042911/images/9744048.png" alt="Supplier 4" class="img-fluid rounded shadow-sm mb-3" style="height: 200px; object-fit: contain;">
+          <img src="assets/just-energy.png" alt="JUST Energy" class="img-fluid rounded shadow-sm mb-3" style="height: 200px; object-fit: contain;" loading="lazy">
           <h5>JUST Energy</h5>
           <p class="text-muted text-justify">Established in year 2016 in Malaysia, Just Energy Sdn. Bhd. is a high-tech enterprise focusing on the research, development, production and sales of automotive lead-acid batteries and accessories. It is a wholly-owned subsidiary of Zhejiang Just Electrical Appliances Co., Ltd. Its headquarters and R&D base are located in Nubu Industrial Park, Lanxi City, Zhejiang Province, China.</p>
           <p class="text-muted text-justify">The parent company Zhejiang Just Electrical Appliances Co., Ltd. (formerly known as Hangzhou Battery Factory) was founded in 1979. The company holds the position of Vice Chairman for Lead-acid Battery Branch of the China Electrical Equipment Association, Executive Director for China Battery Industry Association, and Vice Chairman for Zhejiang Battery Industry Association. The company has a history of more than 40 years in the production of battery product and is renowned as a high-tech enterprise specializing in the production of high-performance batteries.</p>
@@ -192,7 +227,7 @@
         <!-- SLI Batteries -->
         <div class="col-sm-6 col-lg-4">
           <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/sli.webp" class="card-img-top" alt="SLI Batteries">
+            <img src="assets/sli.webp" class="card-img-top" alt="SLI Batteries" loading="lazy">
             <div class="card-body text-center">
               <h5 class="card-title">SLI Batteries</h5>
               <p class="card-text text-muted">Starting, Lighting, Ignition batteries for everyday vehicles.</p>
@@ -203,7 +238,7 @@
         <!-- Truck Batteries -->
         <div class="col-sm-6 col-lg-4">
           <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/truck.webp" class="card-img-top" alt="Truck Batteries">
+            <img src="assets/truck.webp" class="card-img-top" alt="Truck Batteries" loading="lazy">
             <div class="card-body text-center">
               <h5 class="card-title">Truck Batteries</h5>
               <p class="card-text text-muted">Heavy-duty batteries designed for commercial vehicles.</p>
@@ -214,7 +249,7 @@
         <!-- Marine Batteries -->
         <div class="col-sm-6 col-lg-4">
           <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/marine.webp" class="card-img-top" alt="Marine Batteries">
+            <img src="assets/marine.webp" class="card-img-top" alt="Marine Batteries" loading="lazy">
             <div class="card-body text-center">
               <h5 class="card-title">Marine Batteries</h5>
               <p class="card-text text-muted">Built to handle deep discharges and harsh marine conditions.</p>
@@ -225,7 +260,7 @@
         <!-- Moto Batteries -->
         <div class="col-sm-6 col-lg-4">
           <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/moto.webp" class="card-img-top" alt="Motorcycle Batteries">
+            <img src="assets/moto.webp" class="card-img-top" alt="Motorcycle Batteries" loading="lazy">
             <div class="card-body text-center">
               <h5 class="card-title">Moto Batteries</h5>
               <p class="card-text text-muted">Compact, reliable power sources for motorcycles and scooters.</p>
@@ -236,7 +271,7 @@
         <!-- Deep Cycle Batteries -->
         <div class="col-sm-6 col-lg-4">
           <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/deep-cycle.webp" class="card-img-top" alt="Deep Cycle Batteries">
+            <img src="assets/deep-cycle.webp" class="card-img-top" alt="Deep Cycle Batteries" loading="lazy">
             <div class="card-body text-center">
               <h5 class="card-title">Deep Cycle Batteries</h5>
               <p class="card-text text-muted">Designed for prolonged energy output over long periods.</p>
@@ -247,7 +282,7 @@
         <!-- Leisure Batteries -->
         <div class="col-sm-6 col-lg-4">
           <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/leisure.webp" class="card-img-top" alt="Leisure Batteries">
+            <img src="assets/leisure.webp" class="card-img-top" alt="Leisure Batteries" loading="lazy">
             <div class="card-body text-center">
               <h5 class="card-title">Leisure Batteries</h5>
               <p class="card-text text-muted">Perfect for RVs, caravans, and other leisure applications.</p>
@@ -293,8 +328,8 @@
 
         <!-- Logo -->
         <div class="col-md-4 mb-3 mb-md-0 text-center text-md-start">
-          <img src="assets/logo.png" alt="Soutas Logo" height="40" class="mb-2">
-          <p class="small mb-0">&copy; 2026 Soutas Import Agencies</p>
+          <img src="assets/logo.png" alt="Soutas Logo" height="40" class="mb-2" loading="lazy">
+          <p class="small mb-0">&copy; <span id="year"></span> Soutas Import Agencies</p>
           <p class="small">Piraeus, Greece</p>
         </div>
 
@@ -313,9 +348,9 @@
         <!-- Social Media -->
         <div class="col-md-4 text-center text-md-end">
           <h6 class="text-uppercase fw-bold">Connect</h6>
-          <a href="#" class="text-light me-3 fs-5" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-light me-3 fs-5" aria-label="Linkedin"><i class="bi bi-linkedin"></i></a>
-          <a href="mailto:info@soutas.gr" class="text-light fs-5"><i class="bi bi-envelope-fill"></i></a>
+          <a href="https://www.facebook.com/soutas.import" class="text-light me-3 fs-5" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/soutas-import-agencies" class="text-light me-3 fs-5" aria-label="Linkedin" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:info@soutas.gr" class="text-light fs-5" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
           <p class="small mt-3 mb-0">
                     Developed by <a href="https://nassoskranidiotis.com" class="text-light text-decoration-underline" target="_blank">Nassos Kranidiotis</a>
           </p>          
@@ -325,8 +360,9 @@
     </div>
   </footer>
 
-  <button id="backToTop" class="btn btn-dark position-fixed" style="bottom: 20px; right: 20px; display: none; z-index: 999;">
-  <i class="bi bi-arrow-up"></i>
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="btn btn-primary position-fixed" style="bottom: 20px; right: 20px; display: none; z-index: 999;">
+    <i class="bi bi-arrow-up"></i>
   </button>
 
 
