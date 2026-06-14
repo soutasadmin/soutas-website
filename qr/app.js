@@ -168,16 +168,16 @@
       <section class="card-section">
         <h3>Safety and Handling Information</h3>
         <ul class="safety-list">
-          <li>DUE TO HYDROGEN GAS GENERATED FROM BATTERY, HANDLING WITHOUT CARE CAN CAUSE FIRE AND EXPLOSION.</li>
-          <li>THIS 12V BATTERY IS ONLY FOR STARTING ENGINE. DO NOT APPLY THIS PRODUCT FOR OTHER USES.</li>
-          <li>CHARGE THIS BATTERY ONLY AT WELL VENTILATED PLACES, AND AVOID SHORTS OR SPARKS.</li>
-          <li>REFER TO THE INSTRUCTION MANUAL OF VEHICLE OR BATTERY BEFORE USING BOOSTER CABLE.</li>
-          <li>SULFURIC ACID MAY CAUSE BLINDNESS OR SEVERE BURN. IN CASE EYES, SKIN, CLOTHES OR ANY ARTICLES ARE STAINED WITH ACID, FLUSH OBJECTS IMMEDIATELY WITH WATER. IF ACID BEING SWALLOWED, DRINK PLENTY OF WATER PROMPTLY.</li>
-          <li>IN CASE OF ACCIDENTAL CONTACT, CONSULT A DOCTOR IMMEDIATELY.</li>
-          <li>BATTERY FILLED WITH ACID (DO NOT TILT OR SPILL)</li>
-          <li>FLAMMABLE. DO NOT CHARGE NEAR FIRE OR SPARKS</li>
-          <li>DO NOT CHARGE RAPIDLY</li>
-          <li>DO NOT DISASSEMBLE THE BATTERY.</li>
+          <li>Due to hydrogen gas generated from battery, handling without care can cause fire and explosion.</li>
+          <li>This 12v battery is only for starting engine. Do not apply this product for other uses.</li>
+          <li>Charge this battery only at well ventilated places, and avoid shorts or sparks.</li>
+          <li>Refer to the instruction manual of vehicle or battery before using booster cable.</li>
+          <li>Sulfuric acid may cause blindness or severe burn. In case eyes, skin, clothes or any articles are stained with acid, flush objects immediately with water. If acid being swallowed, drink plenty of water promptly.</li>
+          <li>In case of accidental contact, consult a doctor immediately.</li>
+          <li>Battery filled with acid (do not tilt or spill)</li>
+          <li>Flammable. Do not charge near fire or sparks</li>
+          <li>Do not charge rapidly</li>
+          <li>Do not disassemble the battery.</li>
         </ul>
         <img src="img/safety.png" alt="Safety icons" class="safety-img" />
       </section>
