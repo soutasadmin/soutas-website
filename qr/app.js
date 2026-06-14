@@ -114,7 +114,7 @@
     ['RC',        r.rc       != null ? r.rc        + ' min' : '—'],
     ['CCA (EN)',  r.ccaen    != null ? r.ccaen     + ' A'   : '—'],
     ['CCA (SAE)', r.ccasae   != null ? r.ccasae    + ' A'   : '—'],
-    ['Weight',             r.weight   != null ? r.weight + ' kg' : '—'],
+    ['Weight',    r.weight   != null ? r.weight + '± 5% kg' : '—'],
     ['Manufacturing Date', r.manufacturing_date ?? '—'],
   ];
 
