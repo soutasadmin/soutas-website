@@ -169,7 +169,7 @@
         <h3>Safety and Handling Information</h3>
         <ul class="safety-list">
           <li>Due to hydrogen gas generated from battery, handling without care can cause fire and explosion.</li>
-          <li>This 12v battery is only for starting engine. Do not apply this product for other uses.</li>
+          <li>This 12V battery is only for starting engine. Do not apply this product for other uses.</li>
           <li>Charge this battery only at well ventilated places, and avoid shorts or sparks.</li>
           <li>Refer to the instruction manual of vehicle or battery before using booster cable.</li>
           <li>Sulfuric acid may cause blindness or severe burn. In case eyes, skin, clothes or any articles are stained with acid, flush objects immediately with water. If acid being swallowed, drink plenty of water promptly.</li>
