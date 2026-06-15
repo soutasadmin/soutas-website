@@ -62,6 +62,7 @@
       s.country        AS supplier_country,
       s.telephone      AS supplier_telephone,
       s.website_url    AS supplier_website,
+      s.production_code_img AS supplier_production_code_img,
       m.manufacturing_date        AS manufacturing_date,
       m.hazardous_substances      AS hazardous_substances,
       m.critical_raw_materials    AS critical_raw_materials,
@@ -122,13 +123,21 @@
     ['CCA (EN)',  r.ccaen    != null ? r.ccaen     + ' A'   : '—'],
     ['CCA (SAE)', r.ccasae   != null ? r.ccasae    + ' A'   : '—'],
     ['Weight',    r.weight   != null ? r.weight + '± 5% kg' : '—'],
-    ['Manufacturing Date', r.manufacturing_date ?? '—'],
+    [
+      'Manufacturing Date',
+      r.manufacturing_date
+        ? (r.supplier_production_code_img
+            ? `${esc(r.manufacturing_date)} See pattern <a href="img/${esc(r.supplier_production_code_img)}" target="_blank">here</a>`
+            : esc(r.manufacturing_date))
+        : '—',
+      true
+    ],
   ];
 
-  const specHTML = specRows.map(([label, val]) => `
+  const specHTML = specRows.map(([label, val, isHTML]) => `
     <tr>
       <th>${esc(label)}</th>
-      <td>${esc(String(val ?? '—'))}</td>
+      <td>${isHTML ? val : esc(String(val ?? '—'))}</td>
     </tr>
   `).join('');
 
