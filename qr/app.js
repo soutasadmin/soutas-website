@@ -43,8 +43,15 @@
 
   // --- 3. Query ---
   const selectCols = `
-      p.code, p.category, p.chemistry,
-      p.voltage, p.capacity, p.rc, p.ccaen, p.ccasae, p.weight,
+      p.code, 
+      p.group          AS category,  
+      p.chemistry,
+      p.voltage, 
+      p.capacity, 
+      p.rc, 
+      p.ccaen, 
+      p.ccasae, 
+      p.weight,
       b.name AS brand_name,
       s.name           AS supplier_name,
       s.commercialname AS supplier_commercialname,
