@@ -44,7 +44,7 @@
   // --- 3. Query ---
   const selectCols = `
       p.code, 
-      p.group          AS category,  
+      p.[group],  
       p.chemistry,
       p.voltage, 
       p.capacity, 
@@ -114,7 +114,7 @@
   const r = rows[0];
 
   const specRows = [
-    ['Category',  r.category],
+    ['Category',  r.group],
     ['Chemistry', r.chemistry],
     ['Voltage',   r.voltage  != null ? r.voltage  + ' V'   : '—'],
     ['Capacity',  r.capacity != null ? r.capacity + ' Ah'  : '—'],
@@ -204,7 +204,7 @@
       <section class="card-section">
         <h3>EU Declaration of Conformity</h3>
         ${r.declaration_of_conformity
-          ? `<a class="download-btn" href="assets/${esc(r.declaration_of_conformity)}" download="${esc(r.declaration_of_conformity)}.pdf">Download</a>`
+          ? `<a class="download-btn" href="assets/${esc(r.declaration_of_conformity)}.pdf" download="${esc(r.declaration_of_conformity)}.pdf">Download</a>`
           : '<p>—</p>'}
       </section>
     </div>

@@ -61,3 +61,19 @@ window.addEventListener('load', () => {
   });
 });
 
+// Auto-close navbar collapse on mobile after clicking a link
+window.addEventListener('load', () => {
+  const navbarCollapse = document.getElementById('navbarNav');
+  if (navbarCollapse) {
+    const navLinks = navbarCollapse.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (navbarCollapse.classList.contains('show')) {
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse);
+          bsCollapse.hide();
+        }
+      });
+    });
+  }
+});
+

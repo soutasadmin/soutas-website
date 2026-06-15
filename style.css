@@ -189,27 +189,34 @@ h1 {
   box-shadow: 0 8px 15px rgba(13, 110, 253, 0.4);
 }
 
-#contact {
+#contact,
+#suppliers {
   color: #333;
 }
 
-#contact h2 {
+#contact h2,
+#suppliers h2 {
   color: #212529;
 }
 
-#contact h5 {
+#contact h5,
+#suppliers h5 {
   color: #212529;
 }
 
-#contact p {
+#contact p,
+#suppliers p,
+#suppliers ul {
   color: #555;
 }
 
-#contact a {
+#contact a,
+#suppliers a {
   color: var(--primary-color);
 }
 
-#contact a:hover {
+#contact a:hover,
+#suppliers a:hover {
   color: #0b5ed7;
 }
 
