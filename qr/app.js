@@ -32,7 +32,7 @@
 
   let db;
   try {
-    const resp = await fetch('products.db');
+    const resp = await fetch('products.db?t=' + Date.now());
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     const buf  = await resp.arrayBuffer();
     db = new SQL.Database(new Uint8Array(buf));
@@ -127,7 +127,7 @@
       'Manufacturing Date',
       r.manufacturing_date
         ? (r.supplier_production_code_img
-            ? `${esc(r.manufacturing_date)} See pattern <a href="img/${esc(r.supplier_production_code_img)}" target="_blank">here</a>`
+            ? `${esc(r.manufacturing_date)}. See pattern <a href="img/${esc(r.supplier_production_code_img)}" target="_blank">here</a>`
             : esc(r.manufacturing_date))
         : '—',
       true
