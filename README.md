@@ -19,9 +19,10 @@ The website is built with HTML, CSS, and JavaScript, and it uses the Bootstrap f
 
 The `qr` directory contains a product lookup page that is designed to be accessed by scanning a QR code. This page allows users to quickly find information about a specific product. It is not indexed by search engines.
 
-## How to Run
+## How to Update the database
 
-1. Clone the repository.
-2. Open the `index.html` file in your web browser.
+1. Go to `/home/nassoskranidiotis/Documents/OfficeAdmin/QR Codes` locally.
+2. Run `populate_db.py` and update `products.db`.
+3. Copy the updated `products.db` into the `qr` folder. 
 
 No special build steps are required. The website is static and can be served from any web server.
